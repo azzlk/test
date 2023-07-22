@@ -1,0 +1,19 @@
+while wait(2)do
+local args = {
+    [1] = "JanjiJiwa"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("Job"):FireServer(unpack(args))
+
+local args = {
+    [1] = "GetCoffee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("JanjiJiwa"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Delivery"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("NetworkContainer"):WaitForChild("RemoteEvents"):WaitForChild("JanjiJiwa"):FireServer(unpack(args))
+end
